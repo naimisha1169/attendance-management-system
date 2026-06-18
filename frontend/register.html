@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <div>
+    <div class="register-container">
         <h1>Register Page</h1>
         <form>
             <label>Name</label>
             <input type="text" id="name"> <br> <br>
-            <label>Email</label>
-            <input type="email" id="mail"> <br> <br>
+            <label for="exampleFormControlInput1" class="form-label">Email address</label> <br> <br>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label>Password</label> <br> <br>
             <label>Password</label>
             <input type="password" id="password"> <br> <br>
             <label>Reset Password</label>
@@ -24,6 +27,9 @@
             <p>Already have an account? <a href="login.html">login here</a></p>
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="register.js"></script>
 </body>
 

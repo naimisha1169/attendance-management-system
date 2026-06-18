@@ -1,5 +1,5 @@
 const regbtn = document.getElementById("reg-button")
-regbtn.addEventListener("click", function () {
+regbtn.addEventListener("click", function (event) {
     event.preventDefault()
     const name = document.getElementById("name").value
     const mail = document.getElementById("mail").value
@@ -13,7 +13,7 @@ regbtn.addEventListener("click", function () {
         alert("pls fill all fields")
         return
     }
-    if (pass != reset_password) {
+    if (pass !== reset_password) {
         alert("password mismatch")
         return
     }
@@ -27,5 +27,5 @@ regbtn.addEventListener("click", function () {
     console.log(users)
     localStorage.setItem("users", JSON.stringify(users))
     alert("registration successfull")
-    window.Storage.href = "login.html"
+    window.location.href = "login.html"
 })
